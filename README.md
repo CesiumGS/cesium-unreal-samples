@@ -1,8 +1,8 @@
-[![Cesium for Unreal Logo](Images/Cesium-for-Unreal-Logo-WhiteBGH.jpg)](https://www.unrealengine.com/marketplace/en-US/87b0d05800a545d49bf858ef3458c4f7)
+[![Cesium for Unreal Logo](Images/Cesium-for-Unreal-Logo-WhiteBGH.jpg)](https://cesium.com/unreal-marketplace?utm_source=cesium-unreal&utm_medium=github&utm_campaign=unreal)
 
 # Cesium for Unreal Samples
 
-This Cesium for Unreal Samples is a starter project to learn and explore the [Cesium for Unreal](https://www.unrealengine.com/marketplace/en-US/87b0d05800a545d49bf858ef3458c4f7) plugin.
+This [Cesium for Unreal Samples](https://cesium.com/unreal-samples-marketplace?utm_source=cesium-unreal-samples&utm_medium=github&utm_campaign=unreal) is a starter project to learn and explore the [Cesium for Unreal](https://cesium.com/unreal-marketplace?utm_source=cesium-unreal&utm_medium=github&utm_campaign=unreal) plugin.
 
 The levels in this project walk you through the various aspects of enabling global-scale content, applications, and experiences in Unreal Engine
 
@@ -11,9 +11,9 @@ The levels in this project walk you through the various aspects of enabling glob
 
 ### :rocket: Get Started
 
-**[Download Cesium for Unreal Samples from Unreal Engine Marketplace](https://www.unrealengine.com/marketplace/en-US/87b0d05800a545d49bf858ef3458c4f7)**
+**[Download Cesium for Unreal Samples from Unreal Engine Marketplace](https://cesium.com/unreal-samples-marketplace?utm_source=cesium-unreal-samples&utm_medium=github&utm_campaign=unreal)**
 
-You will also need to **[download Cesium for Unreal plugin from Unreal Engine Marketplace](https://www.unrealengine.com/marketplace/en-US/87b0d05800a545d49bf858ef3458c4f7)**
+You will also need to **[download Cesium for Unreal plugin from Unreal Engine Marketplace](https://cesium.com/unreal-marketplace?utm_source=cesium-unreal&utm_medium=github&utm_campaign=unreal)**
 
 Have questions? Ask them on the [community forum](https://community.cesium.com).
 
