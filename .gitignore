@@ -4,4 +4,5 @@ Saved
 CesiumForUnrealSamples.sln
 packages
 Intermediate
-Plugins
+Plugins/*
+!Plugins/.gitkeep 
