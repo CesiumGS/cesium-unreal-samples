@@ -11,7 +11,6 @@ jobs:
     - pip3 install --upgrade pip
     - pip3 install awscli
     - pip3 install httpie
-    - echo $CESIUM_FOR_UNREAL_BUILD
     - ./.travis/travis-get-cesium-for-unreal.sh
     - travis_wait 30 "./.travis/travis-get-ue.sh"
     script:
@@ -20,6 +19,6 @@ jobs:
     - export CLONEDIR=$PWD
     - cd /c/Program\ Files/Epic\ Games/UE_4.26/Engine/Build/BatchFiles
     - ./RunUAT.bat ZipProjectUp -nocompileeditor -project=$CLONEDIR/ -install=$CLONEDIR/${SAMPLES_PACKAGE_NAME}.zip
-    - aws s3 cp ${SAMPLES_PACKAGE_NAME}.zip s3://builds-cesium-unreal/
+    - aws s3 cp $CLONEDIR/${SAMPLES_PACKAGE_NAME}.zip s3://builds-cesium-unreal/
     - export PACKAGE_LINK=$(aws --region us-east-1 s3 presign s3://builds-cesium-unreal/${SAMPLES_PACKAGE_NAME}.zip --expires-in 315360000)
     - http POST "https://api.github.com/repos/${TRAVIS_REPO_SLUG}/statuses/${TRAVIS_COMMIT}" "Authorization:token ${GITHUB_TOKEN}" state=success context=project-package "target_url=${PACKAGE_LINK}" --ignore-stdin
