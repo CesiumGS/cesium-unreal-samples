@@ -1,3 +1,4 @@
+echo $CESIUM_FOR_UNREAL_BUILD
 echo wget "$CESIUM_FOR_UNREAL_BUILD" -O $PWD/cesium-for-unreal.zip
 echo "start"
 wget "$CESIUM_FOR_UNREAL_BUILD" -O $PWD/cesium-for-unreal.zip

@@ -11,6 +11,7 @@ jobs:
     - pip3 install --upgrade pip
     - pip3 install awscli
     - pip3 install httpie
+    - echo $CESIUM_FOR_UNREAL_BUILD
     - ./.travis/travis-get-cesium-for-unreal.sh
     - travis_wait 30 "./.travis/travis-get-ue.sh"
     script:
