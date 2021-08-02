@@ -1,4 +1,4 @@
-wget -q "${CESIUM_FOR_UNREAL_BUILD}" -O $PWD/cesium-for-unreal.zip
+wget "${CESIUM_FOR_UNREAL_BUILD}" -O $PWD/cesium-for-unreal.zip
 if [[ $TRAVIS_OS_NAME == "windows" ]]
 then
     # Enable compression because disk space is limited on Travis.
