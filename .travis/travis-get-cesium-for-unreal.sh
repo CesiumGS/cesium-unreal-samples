@@ -3,7 +3,7 @@ if [[ $TRAVIS_OS_NAME == "windows" ]]
 then
     # Enable compression because disk space is limited on Travis.
     mkdir -p "C:\Program Files\Epic Games\UE_4.26\Engine\Plugins\Marketplace"
-    7z x cesium-for-unreal.zip "-oC:\Program Files\Epic Games\UE_4.26\Engine\Plugins\Marketplace"
+    7z x $PWD/cesium-for-unreal.zip "-oC:\Program Files\Epic Games\UE_4.26\Engine\Plugins\Marketplace"
     rm cesium-for-unreal.zip
 elif [[ $TRAVIS_OS_NAME == "osx" ]]
 then
