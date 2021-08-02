@@ -3,7 +3,7 @@ jobs:
   include:
   - name: Windows
     os: windows
-    env: PATH=/c/Python39:/c/Python39/Scripts:$PATH CESIUM_FOR_UNREAL_BUILD="https://builds-cesium-unreal.s3.amazonaws.com/CesiumForUnreal-v1.4.1-53-g5014a6f.zip?AWSAccessKeyId=AKIARTC57YNRHBJ2GKGG&Signature=8s%2Fijwa%2FO4mdr8oKGH4N%2BZ62esI%3D&Expires=1943242173"
+    env: CESIUM_FOR_UNREAL_BUILD="https://builds-cesium-unreal.s3.amazonaws.com/CesiumForUnreal-v1.4.1-53-g5014a6f.zip?AWSAccessKeyId=AKIARTC57YNRHBJ2GKGG&Signature=8s%2Fijwa%2FO4mdr8oKGH4N%2BZ62esI%3D&Expires=1943242173" PATH=/c/Python39:/c/Python39/Scripts:$PATH
     install:
     - choco install 7zip.portable
     - choco install python --version 3.9.2
@@ -16,7 +16,7 @@ jobs:
     - travis_wait 30 "./.travis/travis-get-ue.sh"
     script:
     - export SAMPLES_VERSION=$(git describe)
-    - export SAMPLES_PACKAGE_NAME=CesiumForUnrealSamples-${SAMPLES_PACKAGE_NAME}
+    - export SAMPLES_PACKAGE_NAME=CesiumForUnrealSamples-${SAMPLES_VERSION}
     - export CLONEDIR=$PWD
     - cd /c/Program\ Files/Epic\ Games/UE_4.26/Engine/Build/BatchFiles
     - ./RunUAT.bat ZipProjectUp -nocompileeditor -project=$CLONEDIR/ -install=$CLONEDIR/${SAMPLES_PACKAGE_NAME}.zip
