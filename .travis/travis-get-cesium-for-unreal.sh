@@ -1,4 +1,4 @@
-wget "$CESIUM_FOR_UNREAL_BUILD" -O $PWD/cesium-for-unreal.zip
+wget -q "$CESIUM_FOR_UNREAL_BUILD" -O $PWD/cesium-for-unreal.zip
 if [[ $TRAVIS_OS_NAME == "windows" ]]
 then
     mkdir -p "C:\Program Files\Epic Games\UE_4.26\Engine\Plugins\Marketplace"
