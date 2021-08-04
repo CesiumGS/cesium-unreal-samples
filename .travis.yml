@@ -25,3 +25,4 @@ jobs:
     - http POST "https://api.github.com/repos/${TRAVIS_REPO_SLUG}/statuses/${TRAVIS_COMMIT}" "Authorization:token ${GITHUB_TOKEN}" state=success context=project-package "target_url=${PACKAGE_LINK}" --ignore-stdin
     - # Test game packaging
     - ./RunUAT.bat -ScriptsForProject=$CLONEDIR/CesiumForUnrealSamples.uproject BuildCookRun -nocompileeditor -installed -nop4 -project=$CLONEDIR/CesiumForUnrealSamples.uproject -cook -stage -archive -archivedirectory=$CLONEDIR/package -package -ddc=InstalledDerivedDataBackendGraph -pak -prereqs -nodebuginfo -targetplatform=Win64 -build -clientconfig=Shipping -utf8output
+    - cat /c/Users/travis/AppData/Roaming/Unreal\ Engine/AutomationTool/Logs/C+Program+Files+Epic+Games+UE_4.26/Log.txt
