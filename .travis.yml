@@ -1,0 +1,28 @@
+language: cpp
+jobs:
+  include:
+  - name: Windows
+    os: windows
+    env: CESIUM_FOR_UNREAL_BUILD="https://builds-cesium-unreal.s3.amazonaws.com/CesiumForUnreal-v1.4.1-53-g5014a6f.zip?AWSAccessKeyId=AKIARTC57YNRHBJ2GKGG&Signature=8s%2Fijwa%2FO4mdr8oKGH4N%2BZ62esI%3D&Expires=1943242173" PATH=/c/Python39:/c/Python39/Scripts:$PATH
+    install:
+    - choco install 7zip.portable
+    - choco install python --version 3.9.2
+    - python -m pip install --upgrade pip
+    - pip3 install --upgrade pip
+    - pip3 install awscli
+    - pip3 install httpie
+    - ./.travis/travis-get-cesium-for-unreal.sh
+    - travis_wait 30 "./.travis/travis-get-ue.sh"
+    script:
+    - # Create and publish the project ZIP file
+    - export SAMPLES_VERSION=$(git describe)
+    - export SAMPLES_PACKAGE_NAME=CesiumForUnrealSamples-${SAMPLES_VERSION}
+    - export CLONEDIR=$PWD
+    - cd /c/Program\ Files/Epic\ Games/UE_4.26/Engine/Build/BatchFiles
+    - ./RunUAT.bat ZipProjectUp -nocompileeditor -project=$CLONEDIR/ -install=$CLONEDIR/${SAMPLES_PACKAGE_NAME}.zip
+    - aws s3 cp $CLONEDIR/${SAMPLES_PACKAGE_NAME}.zip s3://builds-cesium-unreal/
+    - export PACKAGE_LINK=$(aws --region us-east-1 s3 presign s3://builds-cesium-unreal/${SAMPLES_PACKAGE_NAME}.zip --expires-in 315360000)
+    - http POST "https://api.github.com/repos/${TRAVIS_REPO_SLUG}/statuses/${TRAVIS_COMMIT}" "Authorization:token ${GITHUB_TOKEN}" state=success context=project-package "target_url=${PACKAGE_LINK}" --ignore-stdin
+    - # Test game packaging. This doesn't work, cooking fails. Possibly because DirectX isn't available and
+    - # possibly because the Travis VM doesn't have the necessary hardware for cooking.
+    - #./RunUAT.bat -ScriptsForProject=$CLONEDIR/CesiumForUnrealSamples.uproject BuildCookRun -nocompileeditor -installed -nop4 -project=$CLONEDIR/CesiumForUnrealSamples.uproject -cook -stage -archive -archivedirectory=$CLONEDIR/package -package -ddc=InstalledDerivedDataBackendGraph -pak -prereqs -nodebuginfo -targetplatform=Win64 -build -clientconfig=Shipping -utf8output
