@@ -3,7 +3,7 @@ jobs:
   include:
   - name: Windows
     os: windows
-    env: CESIUM_FOR_UNREAL_BUILD="https://builds-cesium-unreal.s3.amazonaws.com/CesiumForUnreal-426-v1.6.2.zip?AWSAccessKeyId=AKIARTC57YNRHBJ2GKGG&Signature=Cty3%2BzeTjwxqaXgczkRd0iXQ4KA%3D&Expires=1946981062" PATH=/c/Python39:/c/Python39/Scripts:$PATH
+    env: CESIUM_FOR_UNREAL_BUILD="https://github.com/CesiumGS/cesium-unreal/releases/download/v1.6.2/CesiumForUnreal-426-v1.6.2.zip" PATH=/c/Python39:/c/Python39/Scripts:$PATH
     install:
     - choco install 7zip.portable
     - choco install python --version 3.9.2
