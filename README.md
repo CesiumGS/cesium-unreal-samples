@@ -7,7 +7,7 @@ The [Cesium for Unreal Samples](https://cesium.com/unreal-samples-marketplace?ut
 The levels in this project will walk you through the plugin's features and demonstrate global-scale content, applications, and experiences in Unreal Engine.
 
 ![Photogrammetry of Melbourne, Australia visualized in Unreal Engine using Cesium for Unreal.](Images/melbourne.jpg)
-*<p align="center">Photogrammetry of Melbourne, Australia visualized in Unreal Engine using Cesium for Unreal.<br>Open the <b>Melbourne</b> level in Cesium for Unreal Samples to experience it yourself!</p>*
+*<p align="center">Photogrammetry of Melbourne, Australia visualized in Unreal Engine using Cesium for Unreal.<br>Open the <b>02_CesiumMelbourne</b> level in Cesium for Unreal Samples to experience it yourself!</p>*
 
 ### :rocket: Get Started
 
@@ -25,7 +25,7 @@ Have questions? Ask them on the [community forum](https://community.cesium.com).
 
 ### :one: Level 1 - Cesium World
 
-The Cesium for Unreal Samples begin with a scene in San Francisco. You'll see [Cesium World Terrain](https://cesium.com/platform/cesium-ion/content/cesium-world-terrain/) below the camera. This level is designed to familiarize you with the core Cesium actors and components like Cesium World Terrain and Cesium Georeference.
+The sample levels begin with a scene in San Francisco. You'll see [Cesium World Terrain](https://cesium.com/platform/cesium-ion/content/cesium-world-terrain/) below the camera. This level is designed to familiarize you with the core Cesium actors and components like Cesium World Terrain and Cesium Georeference.
 
 Be sure to sign into your Cesium ion account using the Cesium button in the toolbar.
 
@@ -35,14 +35,16 @@ In this level, explore high-resolution photogrammetry data of Melbourne. This da
 
 Be sure to change the time of day to create beautiful lighting in your scenes.
 
-### :three: Level 3 - Denver Photogrammetry with Unreal Character Controller
+See how this level was created with the [Adding Datasets tutorial](https://cesium.com/learn/unreal/unreal-datasets/). 
 
-In this level, explore even more high-resolution photogrammetry data of Denver using a third-person character controller. Whereas Melbourne allowed you to freely fly around and explore, in this level you'll walk right up to the real-world data. When streaming content through Cesium for Unreal, physics and gravity will continue to work as expected with your character controllers.
+### :three: Level 3 - Denver Photogrammetry with an Unreal Character Controller
+
+In this level, explore even more high-resolution photogrammetry data of Denver using a third-person character controller. Whereas Melbourne allowed you to freely fly around and explore, in this level you'll walk right up to the real-world data. When streaming content through Cesium for Unreal, physics and gravity will continue to work as expected with your character controllers. For more information on character controllers, check out the [Using Custom Controllers tutorial](https://cesium.com/learn/unreal/unreal-custom-controllers/).
 
 Grab some cool screenshots to share with us as you explore and customize the scenes.
 
 ![Photogrammetry of Union Station in Denver, CO captured by [Aerometrex](https://aerometrex.com.au/) visualized in Unreal Engine using Cesium for Unreal.](Images/aerometrex-denver.jpg)
-*<p align="center">Photogrammetry of Union Station in Denver, CO captured by [Aerometrex](https://aerometrex.com.au/).<br>Open level 3 in Cesium for Unreal Samples to experience it yourself using the character controller!</p>*
+*<p align="center">Photogrammetry of Union Station in Denver, CO captured by [Aerometrex](https://aerometrex.com.au/).<br>Open <b>03_CesiumDenver</b> in the Cesium for Unreal Samples to walk around the dataset.</p>*
 
 ### :four: Level 4 - Using Sublevels to Explore the World
 
@@ -61,9 +63,6 @@ This level has lighting, fog, volumetric clouds, and a post processing volume to
 Cesium for Unreal enables you to access metadata encoded in your 3D Tiles datasets. In this level, explore the buildings in New York City and see what information is included in the tileset about each building.
 
 Looking to use metadata in your project? Check out the [Visualizing Metadata tutorial](https://cesium.com/learn/unreal/unreal-visualize-metadata/) to learn more.
-
-![Metadata about a New York City building tileset, visualized in Unreal Engine using Cesium for Unreal.](Images/metadata.jpg)
-*<p align="center">Viewing the metadata on a building in New York City.<br>Open level 6 to play the level and learn about the buildings in this tileset.</p>*
 
 ### :seven: Level 7 - Multiple Views
 
