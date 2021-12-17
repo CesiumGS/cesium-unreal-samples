@@ -13,7 +13,7 @@ The levels in this project will walk you through the plugin's features and demon
 
 **[Download Cesium for Unreal Samples from Unreal Engine Marketplace](https://cesium.com/unreal-samples-marketplace?utm_source=cesium-unreal-samples&utm_medium=github&utm_campaign=unreal)**
 
-You will also need to download the**[Cesium for Unreal plugin from Unreal Engine Marketplace](https://cesium.com/unreal-marketplace?utm_source=cesium-unreal&utm_medium=github&utm_campaign=unreal)**.
+You will also need to download the [Cesium for Unreal plugin from the Unreal Engine Marketplace](https://cesium.com/unreal-marketplace?utm_source=cesium-unreal&utm_medium=github&utm_campaign=unreal).
 
 The project comes pre-populated with temporary [access tokens](https://cesium.com/learn/cesiumjs-learn/cesiumjs-quickstart/#step-1-create-an-account-and-get-a-token) to allow you to view the datasets. These tokens refresh every month, so be sure to replace the token on every tileset with a token from your own Cesium ion account before building off of these levels.
 
@@ -79,7 +79,7 @@ In this level, you'll see how overlapping tilesets can be combined and unwanted 
 In this level, visit picturesque Crater Lake, where Cesium Cartographic Polygons and material editing are used to render the water of the lake. The Cesium materials used to render tilesets can be easily customized to create any material effect you might need. For some inspiration, take a look at the materials in the `CesiumSamples/Materials` folder, and try applying them to Cesium World Terrain. 
 
 ![Crater Lake, Oregon, visualized in Unreal Engine using Cesium for Unreal.](Images/craterlake.jpg)
-*<p align="center">Crater Lake, Oregon, visualized in Unreal Engine with Cesium for Unreal. Cesium Cartographic Polygons and an edited material allow you to render water in any location. <br>Open level 9 to explore the scene.</p>*
+*<p align="center">Crater Lake, Oregon, visualized in Unreal Engine with Cesium for Unreal. Cesium Cartographic Polygons and an edited material allow you to render water in any location. <br>Open <b>09_CesiumMaterialEditing</b> to explore the scene.</p>*
 
 ### :hammer_and_wrench:Using Cesium for Unreal Samples for Development
 
