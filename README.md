@@ -15,10 +15,6 @@ The levels in this project will walk you through the plugin's features and demon
 
 You will also need to download the [Cesium for Unreal plugin from the Unreal Engine Marketplace](https://cesium.com/unreal-marketplace?utm_source=cesium-unreal&utm_medium=github&utm_campaign=unreal).
 
-The project comes pre-populated with temporary [access tokens](https://cesium.com/learn/cesiumjs-learn/cesiumjs-quickstart/#step-1-create-an-account-and-get-a-token) to allow you to view the datasets. These tokens refresh every month, so be sure to replace the token on every tileset with a token from your own Cesium ion account before building off of these levels.
-
-If all the tilesets suddenly disappear from your levels, you may have been using a sample token. Try replacing them with tokens from your account.
-
 Have questions? Ask them on the [community forum](https://community.cesium.com).
 
 ## :mountain: Level Descriptions
@@ -61,6 +57,9 @@ This level has lighting, fog, volumetric clouds, and a post processing volume to
 ### :six: Level 6 - Metadata
 
 Cesium for Unreal enables you to access metadata encoded in your 3D Tiles datasets. In this level, explore the buildings in New York City and see what information is included in the tileset about each building.
+
+![Metadata of New York City buildings visualized.](Images/metadata.JPG)
+*<p align="center">Metadata of New York City buildings visualized.<br>Open <b>06_CesiumMetadata</b> in the Cesium for Unreal Samples to explore the New York City's metadata.</p>*
 
 Looking to use metadata in your project? Check out the [Visualizing Metadata tutorial](https://cesium.com/learn/unreal/unreal-visualize-metadata/) to learn more.
 
