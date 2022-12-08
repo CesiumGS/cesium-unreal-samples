@@ -3,7 +3,7 @@
 	"Version": 7,
 	"VersionName": "1.16.0",
 	"FriendlyName": "Cesium for Unreal Samples",
-	"EngineAssociation": "4.26",
+	"EngineAssociation": "4.27",
 	"Category": "Geospatial",
 	"Description": "Getting started samples for Cesium for Unreal plugin.",
 	"CreatedBy": "Cesium GS, Inc.",
