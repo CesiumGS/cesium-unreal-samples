@@ -1,0 +1,8 @@
+[
+  {
+    "name": "cesium-unreal",
+    "version": "Latest",
+    "url": "https://github.com/CesiumGS/cesium-unreal",
+    "license": ["Apache-2.0"]
+  }
+]
