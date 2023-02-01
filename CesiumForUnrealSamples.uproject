@@ -1,7 +1,7 @@
 {
 	"FileVersion": 3,
-	"Version": 9,
-	"VersionName": "1.21.0",
+	"Version": 10,
+	"VersionName": "1.22.0",
 	"FriendlyName": "Cesium for Unreal Samples",
 	"EngineAssociation": "4.27",
 	"Category": "Geospatial",
@@ -11,7 +11,7 @@
 	"DocsURL": "https://cesium.com/learn/unreal/",
 	"MarketplaceURL": "com.epicgames.launcher://ue/marketplace/content/c6639cbe970b4126847049944709a27a",
 	"SupportURL": "https://community.cesium.com",
-	"EngineVersion": "4.26.0",
+	"EngineVersion": "4.27.0",
 	"IsBetaVersion": false,
 	"IsExperimentalVersion": false,
 	"Plugins": [
