@@ -85,9 +85,9 @@ In this level, visit picturesque Crater Lake, where Cesium Cartographic Polygons
 The samples project includes two materials that can add visual detail to city datasets like Cesium OSM Buildings. These materials generate windows on the sides of buildings that are reflective and glow at night. Additionally, one material uses OSM buildings metadata to randomize building colors based on their building type. You can use these materials in your own levels to give untextured datasets more visual variety.
 
 ![Cesium OSM Buildings in San Francisco, California, visualized with procedural windows.](Images/procedural-windows.jpg)
-*<p align="center">Cesium OSM Buildings in San Francisco, California, visualized with the `MI_ProceduralWindowsMetadata` material. <br>Open <b>10_CesiumOSMWindows_Metadata</b> to explore the scene.</p>*
+*<p align="center">Cesium OSM Buildings in San Francisco, California, visualized with procedural windows. <br>Open <b>10_CesiumOSMWindows_Metadata</b> to explore the scene.</p>*
 
-### Level 11 - Point Clouds
+### :cloud: Level 11 - Point Clouds
 
 Cesium for Unreal supports rendering point cloud 3D Tilesets in addition to terrain and photogrammetry datasets. In this scene, explore several point cloud datasets around the world. Feel free to add your own point clouds as well!
 
