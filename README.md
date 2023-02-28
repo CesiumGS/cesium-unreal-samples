@@ -91,6 +91,9 @@ The samples project includes two materials that can add visual detail to city da
 
 Cesium for Unreal supports rendering point cloud 3D Tilesets in addition to terrain and photogrammetry datasets. In this scene, explore several point cloud datasets around the world. Feel free to add your own point clouds as well!
 
+![Point Cloud of Melbourne, Australia visualized using Cesium for Unreal.](Images/melbourne-point-cloud.jpg)
+*<p align="center">Point Cloud of Melbourne, Australia visualized using Cesium for Unreal.<br>Open <b>11_CesiumPointClouds</b> to explore multiple point cloud datasets, including the Melbourne Point Cloud.</p>*
+
 ### :hammer_and_wrench: Using Cesium for Unreal Samples for Development
 
 Cesium for Unreal Samples can also be used for development and testing of the Cesium for Unreal plugin. To use this project for development, follow these steps.
