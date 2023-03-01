@@ -80,7 +80,21 @@ In this level, visit picturesque Crater Lake, where Cesium Cartographic Polygons
 ![Crater Lake, Oregon, visualized in Unreal Engine using Cesium for Unreal.](Images/craterlake.jpg)
 *<p align="center">Crater Lake, Oregon, visualized in Unreal Engine with Cesium for Unreal. Cesium Cartographic Polygons and an edited material allow you to render water in any location. <br>Open <b>09_CesiumMaterialEditing</b> to explore the scene.</p>*
 
-### :hammer_and_wrench:Using Cesium for Unreal Samples for Development
+### :keycap_ten: Level 10 - Procedural Window Materials
+
+The samples project includes two materials that can add visual detail to city datasets like Cesium OSM Buildings. These materials generate windows on the sides of buildings that are reflective and glow at night. Additionally, one material uses OSM buildings metadata to randomize building colors based on their building type. You can use these materials in your own levels to give untextured datasets more visual variety.
+
+![Cesium OSM Buildings in San Francisco, California, visualized with procedural windows.](Images/procedural-windows.jpg)
+*<p align="center">Cesium OSM Buildings in San Francisco, California, visualized with procedural windows. <br>Open <b>10_CesiumOSMWindows_Metadata</b> to explore the scene.</p>*
+
+### :cloud: Level 11 - Point Clouds
+
+Cesium for Unreal supports rendering point cloud 3D Tilesets in addition to terrain and photogrammetry datasets. In this scene, explore several point cloud datasets around the world. Feel free to add your own point clouds as well!
+
+![Point Cloud of Melbourne, Australia visualized using Cesium for Unreal.](Images/melbourne-point-cloud.jpg)
+*<p align="center">Point Cloud of Melbourne, Australia visualized using Cesium for Unreal.<br>Open <b>11_CesiumPointClouds</b> to explore multiple point cloud datasets, including the Melbourne Point Cloud.</p>*
+
+### :hammer_and_wrench: Using Cesium for Unreal Samples for Development
 
 Cesium for Unreal Samples can also be used for development and testing of the Cesium for Unreal plugin. To use this project for development, follow these steps.
 
