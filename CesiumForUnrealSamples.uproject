@@ -14,7 +14,6 @@
 	"EngineVersion": "5.0.0",
 	"IsBetaVersion": false,
 	"IsExperimentalVersion": false,
-
 	"Plugins": [
 		{
 			"Name": "CesiumForUnreal",
