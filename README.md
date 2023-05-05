@@ -96,10 +96,10 @@ Cesium for Unreal supports rendering point cloud 3D Tilesets in addition to terr
 
 ### :globe_with_meridians: Level 12 - Google Photorealistic 3D Tiles
 
-Explore the world through Google Photorealistic 3D Tiles, streamed via the Google Map Tiles API. You can learn how to use Photorealistic 3D Tiles in your own projects in the [Getting Started with Google Photorealistic 3D Tiles tutorial](TODO).
+Explore the world through Photorealistic 3D Tiles, streamed via the Google Map Platform. You can learn how to use Photorealistic 3D Tiles in your own projects in the [Getting Started with Photorealistic 3D Tiles tutorial](TODO).
 
-![The Googleplex in Mountain View, California visualized with Photorealistic 3D Tiles in Cesium for Unreal.](Images/googleplex.jpg)
-*<p align="center">The Googleplex in Mountain View, California visualized with Google Photorealistic 3D Tiles in Cesium for Unreal.<br>Open <b>12_CesiumGoogleMapTiles</b> in the Cesium for Unreal Samples to explore the world as Photorealistic 3D Tiles.</p>*
+![The Googleplex in Mountain View, California visualized with Photorealistic 3D Tiles in Cesium for Unreal.](Images/googleplex.jpeg)
+*<p align="center">The Googleplex in Mountain View, California visualized with Photorealistic 3D Tiles in Cesium for Unreal.<br>Open <b>12_CesiumGoogleMapsTiles</b> in the Cesium for Unreal Samples to explore the world as Photorealistic 3D Tiles.</p>*
 
 ### :hammer_and_wrench: Using Cesium for Unreal Samples for Development
 
