@@ -94,7 +94,7 @@ Cesium for Unreal supports rendering point cloud 3D Tilesets in addition to terr
 ![Point Cloud of Melbourne, Australia visualized using Cesium for Unreal.](Images/melbourne-point-cloud.jpg)
 *<p align="center">Point Cloud of Melbourne, Australia visualized using Cesium for Unreal.<br>Open <b>11_CesiumPointClouds</b> to explore multiple point cloud datasets, including the Melbourne Point Cloud.</p>*
 
-### :globe_with_meridians: Level 12 - Photorealistic 3D Tiles via Google Maps Platform.
+### :globe_with_meridians: Level 12 - Photorealistic 3D Tiles via Google Maps Platform
 
 Explore the world through Photorealistic 3D Tiles, streamed via the Google Maps Platform. You can learn how to use Photorealistic 3D Tiles in your own projects in the [Getting Started with Photorealistic 3D Tiles tutorial](TODO).
 
