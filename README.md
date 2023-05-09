@@ -94,6 +94,13 @@ Cesium for Unreal supports rendering point cloud 3D Tilesets in addition to terr
 ![Point Cloud of Melbourne, Australia visualized using Cesium for Unreal.](Images/melbourne-point-cloud.jpg)
 *<p align="center">Point Cloud of Melbourne, Australia visualized using Cesium for Unreal.<br>Open <b>11_CesiumPointClouds</b> to explore multiple point cloud datasets, including the Melbourne Point Cloud.</p>*
 
+### :globe_with_meridians: Level 12 - Photorealistic 3D Tiles via Google Maps Platform
+
+Explore the world through Photorealistic 3D Tiles, streamed via Google Maps Platform. You can learn how to use Photorealistic 3D Tiles in your own projects in the [Getting Started with Photorealistic 3D Tiles tutorial](https://cesium.com/learn/unreal/unreal-photorealistic-3d-tiles).
+
+![The Googleplex in Mountain View, California visualized with Photorealistic 3D Tiles in Cesium for Unreal.](Images/googleplex.jpeg)
+*<p align="center">The Googleplex in Mountain View, California visualized with Photorealistic 3D Tiles in Cesium for Unreal.<br>Open <b>12_CesiumGoogleMapsTiles</b> in the Cesium for Unreal Samples to explore the world as Photorealistic 3D Tiles.</p>*
+
 ### :hammer_and_wrench: Using Cesium for Unreal Samples for Development
 
 Cesium for Unreal Samples can also be used for development and testing of the Cesium for Unreal plugin. To use this project for development, follow these steps.
