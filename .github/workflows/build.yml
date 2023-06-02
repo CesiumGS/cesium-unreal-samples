@@ -24,7 +24,7 @@ jobs:
         run: |
           # Unzip the package ZIP so that it's not a ZIP inside a ZIP when published as a GitHub artifact.
           mkdir extracted_package
-          7z x ${ENV:GITHUB_WORKSPACE}/${ENV:SAMPLES_PACKAGE_NAME}.zip -o${ENV:GITHUB_WORKSPACE}/extracted_package
+          7z x "${ENV:GITHUB_WORKSPACE}/${ENV:SAMPLES_PACKAGE_NAME}.zip" "-o${ENV:GITHUB_WORKSPACE}/extracted_package"
       - name: Publish project package artifact
         if: ${{ success() }}
         uses: actions/upload-artifact@v3
