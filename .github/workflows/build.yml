@@ -12,7 +12,7 @@ jobs:
       - name: Set environment variables
         run: |
           $ENV:SAMPLES_VERSION=$(git describe)
-          $ENV:SAMPLES_PACKAGE_NAME=CesiumForUnrealSamples-${ENV:SAMPLES_VERSION}
+          $ENV:SAMPLES_PACKAGE_NAME="CesiumForUnrealSamples-${ENV:SAMPLES_VERSION}"
 
           # Make the package name available to subsequent steps
           echo "SAMPLES_PACKAGE_NAME=${ENV:SAMPLES_PACKAGE_NAME}" >> $ENV:GITHUB_ENV
