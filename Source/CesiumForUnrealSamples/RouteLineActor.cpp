@@ -116,8 +116,31 @@ parsePositionsFromJsonData(const gsl::span<const std::byte>& data) {
 } // namespace
 
 void ARouteLineActor::OnConstruction(const FTransform& Transform) {
+  Super::OnConstruction(Transform);
+}
+
+void ARouteLineActor::SetNextRoutePosition(const FVector& position) {
+  this->GetDynamicMeshComponent()->GetDynamicMesh()->Reset();
+  if (this->_settingDestination) {
+    this->_destination = position;
+    this->ComputeRoute(this->_start, this->_destination);
+  } else {
+    this->_start = position;
+  }
+  this->_settingDestination = !this->_settingDestination;
+}
+
+void ARouteLineActor::ComputeRoute(
+    const FVector& start,
+    const FVector& destination) {
   std::string url =
-      "https://route-api.arcgis.com/arcgis/rest/services/World/Route/NAServer/Route_World/solve?f=json&token=AAPKf2463b1f5c0c42f6afab87767b967af8av9s9Dtevj-3MX-SW8bv9W9bmqJI3cWOkWREA3E9WAfuK8N5V1IriWlZjXwADZya&stops=151.19578,-33.87296;151.27633,-33.79221";
+      "https://route-api.arcgis.com/arcgis/rest/services/World/Route/NAServer/Route_World/solve"
+      "?f=json"
+      "&token=AAPKf2463b1f5c0c42f6afab87767b967af8av9s9Dtevj-3MX-SW8bv9W9bmqJI3cWOkWREA3E9WAfuK8N5V1IriWlZjXwADZya"
+      "&stops=" +
+      std::to_string(start.X) + "," + std::to_string(start.Y) + ";" +
+      std::to_string(destination.X) + "," + std::to_string(destination.Y);
+
   AsyncSystem& asyncSystem = getAsyncSystem();
   const std::shared_ptr<IAssetAccessor>& pAssetAccessor = getAssetAccessor();
 

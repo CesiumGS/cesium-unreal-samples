@@ -20,7 +20,17 @@ class CESIUMFORUNREALSAMPLES_API ARouteLineActor : public ADynamicMeshActor {
 public:
   virtual void OnConstruction(const FTransform& Transform) override;
 
+  UFUNCTION(BlueprintCallable)
+  void SetNextRoutePosition(const FVector& position);
+
+  UFUNCTION(BlueprintCallable)
+  void ComputeRoute(const FVector& start, const FVector& destination);
+
 private:
   void
   createRouteMesh(const std::vector<CesiumGeospatial::Cartographic>& positions);
+
+  bool _settingDestination = false;
+  FVector _start{};
+  FVector _destination{};
 };
