@@ -1,19 +1,8 @@
 {
 	"FileVersion": 3,
-	"Version": 20,
-	"VersionName": "1.31.1",
-	"FriendlyName": "Cesium for Unreal Samples",
-	"EngineAssociation": "5.1",
+	"EngineAssociation": "5.3",
 	"Category": "Geospatial",
 	"Description": "Getting started samples for Cesium for Unreal plugin.",
-	"CreatedBy": "Cesium GS, Inc.",
-	"CreatedByURL": "https://cesium.com",
-	"DocsURL": "https://cesium.com/learn/unreal/",
-	"MarketplaceURL": "com.epicgames.launcher://ue/marketplace/content/c6639cbe970b4126847049944709a27a",
-	"SupportURL": "https://community.cesium.com",
-	"EngineVersion": "5.0.0",
-	"IsBetaVersion": false,
-	"IsExperimentalVersion": false,
 	"Plugins": [
 		{
 			"Name": "CesiumForUnreal",
@@ -22,6 +11,10 @@
 		},
 		{
 			"Name": "SunPosition",
+			"Enabled": true
+		},
+		{
+			"Name": "PCG",
 			"Enabled": true
 		}
 	]
