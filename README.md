@@ -54,14 +54,14 @@ Combine real-world content With Unreal Engine's lighting, rendering, and post pr
 
 This level has lighting, fog, volumetric clouds, and a post processing volume to create a picturesque scene at Mt. Fuji. You should try tweaking the setting to customize the scene and create different effects. Not sure where to start? Check out the [Lighting and Rendering tutorial](https://cesium.com/learn/unreal/unreal-post-processing/). We would love to see what you create!
 
-### :six: Level 6 - Metadata
+### :six: Level 6 - Features and Metadata
 
-Cesium for Unreal enables you to access metadata encoded in your 3D Tiles datasets. In this level, explore the buildings in New York City and see what information is included in the tileset about each building.
+Cesium for Unreal enables you to access the features and metadata properties encoded in your 3D Tiles datasets. In this level, explore the features of the San Francisco Ferry Building, visualized with metadata styling an Unreal material layer.
 
-![Metadata of New York City buildings visualized.](Images/metadata.JPG)
-*<p align="center">Metadata of New York City buildings visualized.<br>Open <b>06_CesiumMetadata</b> in the Cesium for Unreal Samples to explore the New York City's metadata.</p>*
+![Metadata of San Francisco Ferry Building visualized.](Images/metadata.JPG)
+*<p align="center">Metadata of San Francisco Ferry Building visualized.<br>Open <b>06_CesiumMetadata</b> in the Cesium for Unreal Samples to explore the San Francisco Ferry Building's metadata.</p>*
 
-Looking to use metadata in your project? Check out the [Visualizing Metadata tutorial](https://cesium.com/learn/unreal/unreal-visualize-metadata/) to learn more.
+Looking to use features or metadata in your project? Check out the [Visualizing Features and Metadata tutorial](https://cesium.com/learn/unreal/unreal-visualize-metadata/) to learn more.
 
 ### :seven: Level 7 - Multiple Views
 
@@ -94,12 +94,16 @@ Cesium for Unreal supports rendering point cloud 3D Tilesets in addition to terr
 ![Point Cloud of Melbourne, Australia visualized using Cesium for Unreal.](Images/melbourne-point-cloud.jpg)
 *<p align="center">Point Cloud of Melbourne, Australia visualized using Cesium for Unreal.<br>Open <b>11_CesiumPointClouds</b> to explore multiple point cloud datasets, including the Melbourne Point Cloud.</p>*
 
-### :globe_with_meridians: Level 12 - Photorealistic 3D Tiles via Google Maps Platform
+### :globe_with_meridians: Level 12 - Photorealistic 3D Tiles from Google Maps Platform
 
-Explore the world through Photorealistic 3D Tiles, streamed via Google Maps Platform. You can learn how to use Photorealistic 3D Tiles in your own projects in the [Photorealistic 3D Tiles from Google Maps Platform tutorial](https://cesium.com/learn/unreal/unreal-photorealistic-3d-tiles).
+Explore the world through Google's Photorealistic 3D Tiles streamed through Cesium ion. You can learn how to use Photorealistic 3D Tiles in your own projects in the [Photorealistic 3D Tiles from Google Maps Platform tutorial](https://cesium.com/learn/unreal/unreal-photorealistic-3d-tiles).
 
 ![The Googleplex in Mountain View, California visualized with Photorealistic 3D Tiles in Cesium for Unreal.](Images/googleplex.jpeg)
 *<p align="center">The Googleplex in Mountain View, California visualized with Photorealistic 3D Tiles in Cesium for Unreal.<br>Open <b>12_CesiumGoogleMapsTiles</b> in the Cesium for Unreal Samples to explore the world as Photorealistic 3D Tiles.</p>*
+
+### :scissors: Level 13 - Cesium Tile Excluder
+
+This level demonstrates the use of `CesiumTileExcluder`, a component that can be utilized to implement custom tile exclusion behavior. Play around with the sample box excluder, and feel free to use it as a template for your own excluder logic.
 
 ### :hammer_and_wrench: Using Cesium for Unreal Samples for Development
 
