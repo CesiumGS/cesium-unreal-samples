@@ -2,7 +2,7 @@ name: Cesium for Unreal Samples
 on: [push]
 jobs:
   Package:
-    runs-on: ["self-hosted","windows","x64","unreal-50"]
+    runs-on: ["self-hosted","windows","x64","unreal-51"]
     steps:
       - name: Check out repository code
         uses: actions/checkout@v3
@@ -18,8 +18,8 @@ jobs:
           echo "SAMPLES_PACKAGE_NAME=${ENV:SAMPLES_PACKAGE_NAME}" >> $ENV:GITHUB_ENV
       - name: Package Project
         run: |
-          cd "C:/Program Files/Epic Games/UE_5.0/Engine/Build/BatchFiles"
-          & "C:/Program Files/Epic Games/UE_5.0/Engine/Build/BatchFiles/RunUAT.bat" ZipProjectUp -nocompileeditor -project="${ENV:GITHUB_WORKSPACE}/" -install="${ENV:GITHUB_WORKSPACE}/${ENV:SAMPLES_PACKAGE_NAME}".zip -nocompile
+          cd "C:/Program Files/Epic Games/UE_5.1/Engine/Build/BatchFiles"
+          & "C:/Program Files/Epic Games/UE_5.1/Engine/Build/BatchFiles/RunUAT.bat" ZipProjectUp -nocompileeditor -project="${ENV:GITHUB_WORKSPACE}/" -install="${ENV:GITHUB_WORKSPACE}/${ENV:SAMPLES_PACKAGE_NAME}".zip -nocompile
       - name: Extract built package
         run: |
           # Unzip the package ZIP so that it's not a ZIP inside a ZIP when published as a GitHub artifact.
