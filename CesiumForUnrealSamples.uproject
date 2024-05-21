@@ -1,7 +1,7 @@
 {
 	"FileVersion": 3,
-	"Version": 24,
-	"VersionName": "2.5.0",
+	"Version": 26,
+	"VersionName": "2.6.0",
 	"FriendlyName": "Cesium for Unreal Samples",
 	"EngineAssociation": "5.2",
 	"Category": "Geospatial",
