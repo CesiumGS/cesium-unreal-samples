@@ -105,6 +105,27 @@ Explore the world through Google's Photorealistic 3D Tiles streamed through Cesi
 
 This level demonstrates the use of `CesiumTileExcluder`, a component that can be utilized to implement custom tile exclusion behavior. Play around with the sample box excluder, and feel free to use it as a template for your own excluder logic.
 
+### :triangular_ruler: Level 14 - Architectural Design
+
+This level showcases an architectural design model streamed into Unreal Engine using 3D Tiles. It demonstrates the ability to toggle the visibility of different design layers, highlight individual features selected by the user, and display their associated metadata.
+
+![Snowdon Sample Model from Autodesk Revit, streamed with 3D Tiles and visualized using Cesium for Unreal.](Images/architectural-design.jpg)
+*<p align="center">Snowdon Sample Model from Autodesk Revit, streamed with 3D Tiles and visualized using Cesium for Unreal.<br>Open <b>14_CesiumArchitecturalDesign</b> to learn more about streaming architectural designs using 3D Tiles.</p>*
+
+### :art: Level 15 - Interactively Style an Architectural Design by Metadata
+
+This level highlights how to interactively style an architectural design using its embedded metadata. Users can identify and highlight interior piping elements that fall within a specified range, adjustable via a custom user widget.
+
+![Piping interactively highlighted based on embedded length metadata, visualized using Cesium for Unreal.](Images/style-by-metadata.jpg)
+*<p align="center">Piping interactively highlighted based on embedded length metadata, visualized using Cesium for Unreal.<br>Open <b>15_CesiumArchitecturalMetadataStyling</b> to see how 3D Tiles can be styled interactively using metadata and user widgets.</p>*
+
+### :see_no_evil: Level 16 - Isolate Architectural Design Elements by Category
+
+This level demonstrates how to dynamically hide elements of an architectural model based on their embedded category metadata.
+
+![Architectural Design with all geometry except for stairs hidden, visualized using Cesium for Unreal.](Images/isolate-by-category.jpg)
+*<p align="center">Architectural Design with all geometry except for stairs hidden, visualized using Cesium for Unreal.<br>Open <b>16_CesiumArchitecturalIsolateCategory</b> to see how elements of an Architectural Design streamed using 3D Tiles can be hidden based on category metadata.</p>*
+
 ### :hammer_and_wrench: Using Cesium for Unreal Samples for Development
 
 Cesium for Unreal Samples can also be used for development and testing of the Cesium for Unreal plugin. To use this project for development, follow these steps.
