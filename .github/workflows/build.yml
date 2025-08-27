@@ -2,7 +2,7 @@ name: Cesium for Unreal Samples
 on: [push]
 jobs:
   Package:
-    runs-on: windows-2019
+    runs-on: windows-2022
     steps:
       - name: Check out repository code
         uses: actions/checkout@v4
@@ -11,8 +11,8 @@ jobs:
       - name: Install Unreal Engine
         uses: ./.github/actions/install-unreal-windows
         with:
-          unreal-engine-zip: "s3://cesium-unreal-engine/5.1.1/Windows/UE_5.1.1.zip"
-          unreal-program-name: "UE_5.1"
+          unreal-engine-zip: "s3://cesium-unreal-engine/5.4.0/UE_5.4.zip"
+          unreal-program-name: "UE_5.4"
           aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
       - name: Set environment variables
@@ -24,8 +24,8 @@ jobs:
           echo "SAMPLES_PACKAGE_NAME=${ENV:SAMPLES_PACKAGE_NAME}" >> $ENV:GITHUB_ENV
       - name: Package Project
         run: |
-          cd "D:/Program Files/Epic Games/UE_5.1/Engine/Build/BatchFiles"
-          & "D:/Program Files/Epic Games/UE_5.1/Engine/Build/BatchFiles/RunUAT.bat" ZipProjectUp -nocompileeditor -project="${ENV:GITHUB_WORKSPACE}/" -install="${ENV:GITHUB_WORKSPACE}/${ENV:SAMPLES_PACKAGE_NAME}".zip -nocompile
+          cd "D:/Program Files/Epic Games/UE_5.4/Engine/Build/BatchFiles"
+          & "D:/Program Files/Epic Games/UE_5.4/Engine/Build/BatchFiles/RunUAT.bat" ZipProjectUp -nocompileeditor -project="${ENV:GITHUB_WORKSPACE}/" -install="${ENV:GITHUB_WORKSPACE}/${ENV:SAMPLES_PACKAGE_NAME}".zip -nocompile
       - name: Extract built package
         run: |
           # Unzip the package ZIP so that it's not a ZIP inside a ZIP when published as a GitHub artifact.
