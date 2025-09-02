@@ -130,7 +130,7 @@ This level demonstrates how to dynamically hide elements of an architectural mod
 
 This levels demonstrates how to stream the Moon and Mars into your Unreal Engine application.
 
-See how this level was created with the [Cesium Moon and Cesium Mars in Cesium for Unreal tutorial](https://cesium.com/learn/unreal/unreal-moon-mars/).
+See how this level was created with the [Moon and Mars tutorial](https://cesium.com/learn/unreal/unreal-moon-mars/).
 
 ![Cesium Moon, visualized using Cesium for Unreal.](Images/CesiumMoon.jpg)
 *<p align="center">Cesium Moon, visualized using Cesium for Unreal.</p>*
