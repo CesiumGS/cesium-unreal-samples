@@ -126,6 +126,15 @@ This level demonstrates how to dynamically hide elements of an architectural mod
 ![Architectural Design with all geometry except for stairs hidden, visualized using Cesium for Unreal.](Images/isolate-by-category.jpg)
 *<p align="center">Architectural Design with all geometry except for stairs hidden, visualized using Cesium for Unreal.<br>Open <b>16_CesiumArchitecturalIsolateCategory</b> to see how elements of an Architectural Design streamed using 3D Tiles can be hidden based on category metadata.</p>*
 
+### :moon: Level 17 - Moon and Mars
+
+This levels demonstrates how to stream the Moon and Mars into your Unreal Engine application.
+
+See how this level was created with the [Cesium Moon and Cesium Mars in Cesium for Unreal tutorial](https://cesium.com/learn/unreal/unreal-moon-mars/).
+
+![Cesium Moon, visualized using Cesium for Unreal.](Images/CesiumMoon.jpg)
+*<p align="center">Cesium Moon, visualized using Cesium for Unreal.</p>*
+
 ### :hammer_and_wrench: Using Cesium for Unreal Samples for Development
 
 Cesium for Unreal Samples can also be used for development and testing of the Cesium for Unreal plugin. To use this project for development, follow these steps.
