@@ -24,7 +24,7 @@ jobs:
           echo "SAMPLES_PACKAGE_NAME=${ENV:SAMPLES_PACKAGE_NAME}" >> $ENV:GITHUB_ENV
       - name: Package Project
         run: |
-          cd "D:/Program Files/Epic Games/UE_5/Engine/Build/BatchFiles"
+          cd "D:/Program Files/Epic Games/UE_5.5/Engine/Build/BatchFiles"
           & "D:/Program Files/Epic Games/UE_5.5/Engine/Build/BatchFiles/RunUAT.bat" ZipProjectUp -nocompileeditor -project="${ENV:GITHUB_WORKSPACE}/" -install="${ENV:GITHUB_WORKSPACE}/${ENV:SAMPLES_PACKAGE_NAME}".zip -nocompile
       - name: Extract built package
         run: |
