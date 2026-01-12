@@ -11,8 +11,8 @@ jobs:
       - name: Install Unreal Engine
         uses: ./.github/actions/install-unreal-windows
         with:
-          unreal-engine-zip: "s3://cesium-unreal-engine/5.4.0/UE_5.4.zip"
-          unreal-program-name: "UE_5.4"
+          unreal-engine-zip: "s3://cesium-unreal-engine/5.5.0/UE_5.5.zip"
+          unreal-program-name: "UE_5.5"
           aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
       - name: Set environment variables
