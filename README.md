@@ -128,12 +128,19 @@ This level demonstrates how to dynamically hide elements of an architectural mod
 
 ### :moon: Level 17 - Moon and Mars
 
-This levels demonstrates how to stream the Moon and Mars into your Unreal Engine application.
+This level demonstrates how to stream the Moon and Mars into your Unreal Engine application.
 
 See how this level was created with the [Moon and Mars tutorial](https://cesium.com/learn/unreal/unreal-moon-mars/).
 
 ![Cesium Moon, visualized using Cesium for Unreal.](Images/CesiumMoon.jpg)
 *<p align="center">Cesium Moon, visualized using Cesium for Unreal.</p>*
+
+### :boom: Level 18 - Gaussian Splats
+
+In this level, explore a Gaussian Splats dataset generated from a collection of drone images using Cesium ion. Cesium for Unreal can stream Gaussian splat payloads through 3D Tiles alongside terrain, photogrammetry, design models, and point clouds. Gaussian splats yield photorealistic rendering quality and often capture small details that are expensive to replicate with triangle meshing. 
+
+![Hines Rowing Center in Conshohocken, Pennsylvania, visualized with Gaussian Splats in Cesium for Unreal.](Images/gaussian-splats.jpg)
+*<p align="center">The Hines Rowing Center in Conshohocken, Pennsylvania, visualized with Gaussian Splats in Cesium for Unreal.<br>Open <b>18_CesiumGaussianSplats</b> to explore.</p>*
 
 ### :hammer_and_wrench: Using Cesium for Unreal Samples for Development
 
