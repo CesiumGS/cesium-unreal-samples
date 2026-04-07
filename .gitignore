@@ -5,3 +5,7 @@ CesiumForUnrealSamples.sln
 packages
 Intermediate
 Plugins
+cesium-request-cache*
+.idea
+*.xcworkspace
+.DS_Store
