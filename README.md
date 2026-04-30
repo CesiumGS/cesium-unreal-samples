@@ -139,8 +139,8 @@ See how this level was created with the [Moon and Mars tutorial](https://cesium.
 
 In this level, explore a Gaussian Splats dataset generated from a collection of drone images using Cesium ion. Cesium for Unreal can stream Gaussian splat payloads through 3D Tiles alongside terrain, photogrammetry, design models, and point clouds. Gaussian splats yield photorealistic rendering quality and often capture small details that are expensive to replicate with triangle meshing. 
 
-![Hines Rowing Center in Conshohocken, Pennsylvania, visualized with Gaussian Splats in Cesium for Unreal.](Images/gaussian-splats.jpg)
-*<p align="center">The Hines Rowing Center in Conshohocken, Pennsylvania, visualized with Gaussian Splats in Cesium for Unreal.<br>Open <b>18_CesiumGaussianSplats</b> to explore.</p>*
+![The Microsoft campus in Redmond, Washington, visualized with 3D Tiles Gaussian Splats in Cesium for Unreal.](Images/gaussian-splats.jpg)
+*<p align="center">The Microsoft campus in Redmond, Washington, visualized with 3D Tiles Gaussian Splats in Cesium for Unreal.<br>Open <b>18_CesiumGaussianSplats</b> to explore.</p>*
 
 ### :hammer_and_wrench: Using Cesium for Unreal Samples for Development
 
